@@ -225,7 +225,7 @@ body, html {
     </div>
     <script>
 function myFunction() {
-  var x = document.getElementById("hiddengallery");
+  var x = document.getElementById("hiddengallery").classList.toggle("show");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
