@@ -186,7 +186,9 @@ body, html {
     <div class="w3-col m3">
       <img src="p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="South Pointe Pier">
     </div>
-    
+  </div>
+    <button class="w3-button w3-padding-large w3-light-grey onclick="myFunction()" style="margin-top:64px">LOAD MORE</button>
+<div id="hiddengallery">
   <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
       <img src="p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ocean storm">
@@ -221,8 +223,17 @@ body, html {
     <div class="w3-col m3">
       <img src="p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="South Pointe Pier">
     </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-  </div>
+    <script>
+function myFunction() {
+  var x = document.getElementById("hiddengallery");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</div>
 </div>
 
 <!-- Modal for full size images on click-->
